@@ -1,0 +1,49 @@
+# Ignore the binary files
+/bin
+/*.exe
+/*.exe~
+/bin/
+/obj/
+/out/
+
+# Go specific files
+*.test
+*.out
+*.log
+*.prof
+*.coverage
+*.tmp
+*.cache
+*.dat
+*.gen.go
+*.mod
+*.sum
+
+# Dependencies
+/vendor/
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*~.nib
+*.DS_Store
+
+# Docker files
+docker-compose.override.yml
+Dockerfile.dev
+*.dockerignore
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Other files
+*.pid
+*.seed
+*.pid.lock
+
+# Ignore directories
+media/
+tmp/

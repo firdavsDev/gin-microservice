@@ -1,0 +1,14 @@
+version: '3.8'  # specify docker-compose version
+
+services:
+  # Your Go microservice
+  gin-microservice:
+    build:
+      context: .  # current directory
+      dockerfile: Dockerfile
+    container_name: gin-microservice  # name of the container
+    ports:
+      - "8080:8080"  # map host port 8080 to container port 8080
+    env_file:
+      - .env  # environment variables file
+
